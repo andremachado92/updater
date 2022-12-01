@@ -12,8 +12,7 @@
 	<artifactId>updater</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>updater</name>
-	<description>API with multiple databases connected,
-		takes the backup in one database and inserts into another</description>
+	<description>API with multiple databases connected </description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
