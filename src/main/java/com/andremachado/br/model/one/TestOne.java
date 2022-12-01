@@ -1,7 +1,8 @@
 package com.andremachado.br.model.one;
 
-import jakarta.persistence.*;
 import lombok.Data;
+
+import javax.persistence.*;
 
 @Data
 @Entity

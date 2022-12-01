@@ -14,7 +14,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 @Configuration
 @EnableJpaRepositories(
         basePackageClasses = TestTwoRepository.class,
-        entityManagerFactoryRef = "authEntityManager")
+        entityManagerFactoryRef = "twoEntityManager")
 public class TwoConfig {
 
     @Bean
@@ -24,12 +24,12 @@ public class TwoConfig {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean authEntityManager(
+    public LocalContainerEntityManagerFactoryBean twoEntityManager(
             EntityManagerFactoryBuilder builder,
             @Qualifier("twoDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.andremachado.model.two")
+                .packages("com.andremachado.br.model.two")
                 .build();
     }
 }

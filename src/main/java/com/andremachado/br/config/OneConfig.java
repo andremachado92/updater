@@ -27,12 +27,12 @@ public class OneConfig {
 
     @Bean
     @Primary
-    public LocalContainerEntityManagerFactoryBean appEntityManager(
+    public LocalContainerEntityManagerFactoryBean oneEntityManager(
             EntityManagerFactoryBuilder builder,
             @Qualifier("oneDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.andremachado.model.one")
+                .packages("com.andremachado.br.model.one")
                 .build();
     }
 }
